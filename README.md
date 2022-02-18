@@ -9,10 +9,10 @@ work On Progress
 ## Roadmap 💎
 | Menu                                                                       | Status                                                                                                            |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Base Template                                                                      | - [x]                                                                                                  |
-| Auth : Laravel Breeze                                                                      | - [x]                                                                                                  |
-| Auth : Email, Username, NomerInduk                                                                       | - [x]                                                                                                               |
-| Template Lading                                                                     | - [ ]                                                                                                              |
+| Base Template                                                                      | :white_check_mark:                                                                                                  |
+| Auth : Laravel Breeze                                                                      | :white_check_mark:                                                                                                  |
+| Auth : Email, Username, NomerInduk                                                                       | :white_check_mark:                                                                                                               |
+| Template Lading                                                                     | :clock1030:                                                                                                               |
 | Template admin                                                                       | -                                                                                                              |
 | Helper / Fungsi                                                                       | -                                                                                                              |
 | Seeder and Faker                                                                       | -                                                                                                              |
