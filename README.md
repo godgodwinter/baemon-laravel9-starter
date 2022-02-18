@@ -6,15 +6,23 @@
 work On Progress
 
 
-## What's in Premium Version 💎
+## Roadmap 💎
 | Menu                                                                       | Status                                                                                                            |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Base Template                         |
-| 1                                             |
+| Base Template                                                                      | 1                                                                                                  |
 | Auth : Laravel Breeze                                                                      | 1                                                                                                  |
 | Auth : Email, Username, NomerInduk                                                                       | 1                                                                                                               |
-                                                                                                     |
-
+| Template Lading                                                                     | -                                                                                                               |
+| Template admin                                                                       | -                                                                                                              |
+| Helper / Fungsi                                                                       | -                                                                                                              |
+| Seeder and Faker                                                                       | -                                                                                                              |
+| Excel : Export and Import                                                                       | -                                                                                                              |
+| PDF : download PDF                                                                       | -                                                                                                              |
+| Barcoder                                                                       | -                                                                                                              |
+| Hak Akses (controller)                                                                       | -                                                                                                              |
+| Datatable                                                                       | -                                                                                                              |
+| wysiwyg                                                                       | -                                                                                                              |
+| Chart / Graph                                                                       | -                                                                                                              |
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
