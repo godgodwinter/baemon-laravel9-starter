@@ -9,10 +9,10 @@ work On Progress
 ## Roadmap 💎
 | Menu                                                                       | Status                                                                                                            |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Base Template                                                                      | 1                                                                                                  |
-| Auth : Laravel Breeze                                                                      | 1                                                                                                  |
-| Auth : Email, Username, NomerInduk                                                                       | 1                                                                                                               |
-| Template Lading                                                                     | -                                                                                                               |
+| Base Template                                                                      | [x]                                                                                                  |
+| Auth : Laravel Breeze                                                                      | [x]                                                                                                  |
+| Auth : Email, Username, NomerInduk                                                                       | [x]                                                                                                               |
+| Template Lading                                                                     | [ ]                                                                                                               |
 | Template admin                                                                       | -                                                                                                              |
 | Helper / Fungsi                                                                       | -                                                                                                              |
 | Seeder and Faker                                                                       | -                                                                                                              |
