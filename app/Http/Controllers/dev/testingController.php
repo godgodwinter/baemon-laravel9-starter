@@ -11,4 +11,7 @@ class testingController extends Controller
         $pages='dashboard';
         return view('pages.dev.dashboard.index');
     }
+    public function notif(){
+        return redirect()->route('dev.admin.dashboard')->with('status','Data berhasil diubah!')->with('tipe','success')->with('icon','fas fa-feather');
+    }
 }

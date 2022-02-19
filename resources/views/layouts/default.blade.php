@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>{{Fungsi::app_nama()}}</title>
 
     <meta name="description" content="" />
 
@@ -44,7 +44,7 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
+            <a href="{{route('dashboard')}}" class="app-brand-link">
               <span class="app-brand-logo demo">
                 <svg
                   width="25"
@@ -100,7 +100,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">Baemon</span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">{{Fungsi::app_nama()}}</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -132,7 +132,7 @@
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
               <!-- Search -->
-              <div class="navbar-nav align-items-center">
+              {{-- <div class="navbar-nav align-items-center">
                 <div class="nav-item d-flex align-items-center">
                   <i class="bx bx-search fs-4 lh-0"></i>
                   <input
@@ -142,12 +142,12 @@
                     aria-label="Search..."
                   />
                 </div>
-              </div>
+              </div> --}}
               <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-                <li class="nav-item lh-1 me-3">
+                {{-- <li class="nav-item lh-1 me-3">
                   <a
                     class="github-button"
                     href="https://github.com/themeselection/sneat-html-admin-template-free"
@@ -157,7 +157,7 @@
                     aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
                     >Star</a
                   >
-                </li>
+                </li> --}}
 
                 <!-- User -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -176,8 +176,8 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
+                            <span class="fw-semibold d-block">{{Auth::user()?Auth::user()->name:'Belum Login'}}</span>
+                            <small class="text-muted">{{Auth::user()?Auth::user()->tipeuser:'Guest'}}</small>
                           </div>
                         </div>
                       </a>
@@ -210,10 +210,19 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
-                      </a>
+
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+
+                                <a href="{{ route('logout') }}" class="dropdown-item "
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                                    <i class="fas fa-sign-out-alt">
+                                    </i>
+                                    <span class="align-middle">Log Out</span>
+                                </a>
+                        </form>
                     </li>
                   </ul>
                 </li>
@@ -771,11 +780,11 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                  , made with ❤️ by
+                  - BaemonTeam , Template admin by
                   <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
                 </div>
                 <div>
-                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                  {{-- <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
                   <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
 
                   <a
@@ -790,7 +799,7 @@
                     target="_blank"
                     class="footer-link me-4"
                     >Support</a
-                  >
+                  > --}}
                 </div>
               </div>
             </footer>

@@ -36,4 +36,16 @@ class Fungsi {
 
         return $str[2]." ".$bulanindo." " .$str[0];
     }
+
+    // getter and setter
+    public static function app_nama(){
+        $settings = DB::table('settings')->first();
+        // dd($settings->first()->app_nama);
+        if($settings!=null){
+            $data=$settings->app_nama;
+        }else{
+            $data="Judul Aplikasi";
+        }
+        return $data;
+    }
 }

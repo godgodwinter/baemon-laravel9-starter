@@ -7,7 +7,7 @@ Beranda
 @push('before-script')
 
 @if (session('status'))
-{{-- <x-sweetalertsession tipe="{{session('tipe')}}" status="{{session('status')}}"/> --}}
+<x-sweetalertsession tipe="{{session('tipe')}}" status="{{session('status')}}"/>
 @endif
 @endpush
 

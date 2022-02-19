@@ -13,4 +13,5 @@ Route::get('/dev/admin/dashboard', function () {
 });
 
 Route::get('/dev/admin/dashboard', [testingController::class, 'index'])->name('dev.admin.dashboard');
+Route::get('/dev/admin/dashboard/notif', [testingController::class, 'notif'])->name('dev.admin.dashboard.notif');
 

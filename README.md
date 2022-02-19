@@ -13,7 +13,7 @@ work On Progress
 | Auth : Laravel Breeze                                                                      | :white_check_mark:                                                                                                  |
 | Auth : Email, Username, NomerInduk                                                                       | :white_check_mark:                                                                                                               |
 | Template Lading                                                                     | :clock1030:                                                                                                               |
-| Template admin                                                                       | -                                                                                                              |
+| Template admin                                                                       | :white_check_mark:                                                                                                              |
 | Helper / Fungsi                                                                       | :white_check_mark:                                                                                                               |
 | Seeder                                                                        | :white_check_mark:                                                                                                              |
 | Faker                                                                        | -                                                                                                          |
@@ -24,6 +24,8 @@ work On Progress
 | Datatable                                                                       | -                                                                                                              |
 | wysiwyg                                                                       | -                                                                                                              |
 | Chart / Graph                                                                       | -                                                                                                              |
+| Sweetalert2 (session / notif)                                                                      | :white_check_mark:                                                                                                               |
+| Fontawesome6                                                                      | :white_check_mark:                                                                                                               |
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
