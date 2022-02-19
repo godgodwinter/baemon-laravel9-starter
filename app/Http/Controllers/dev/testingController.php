@@ -14,4 +14,8 @@ class testingController extends Controller
     public function notif(){
         return redirect()->route('dev.admin.dashboard')->with('status','Data berhasil diubah!')->with('tipe','success')->with('icon','fas fa-feather');
     }
+    public function barcode(){
+        $pages='dashboard';
+        return view('pages.dev.testing.barcode');
+    }
 }
