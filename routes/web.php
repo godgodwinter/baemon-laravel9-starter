@@ -21,4 +21,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/fungsi', function () {
+    return Fungsi::tanggalindo('2020-02-19');
+});
+
 require __DIR__.'/auth.php';

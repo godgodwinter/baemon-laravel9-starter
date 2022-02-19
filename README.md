@@ -15,7 +15,8 @@ work On Progress
 | Template Lading                                                                     | :clock1030:                                                                                                               |
 | Template admin                                                                       | -                                                                                                              |
 | Helper / Fungsi                                                                       | -                                                                                                              |
-| Seeder and Faker                                                                       | -                                                                                                              |
+| Seeder                                                                        | :white_check_mark:                                                                                                              |
+| Faker                                                                        | -                                                                                                          |
 | Excel : Export and Import                                                                       | -                                                                                                              |
 | PDF : download PDF                                                                       | -                                                                                                              |
 | Barcoder                                                                       | -                                                                                                              |

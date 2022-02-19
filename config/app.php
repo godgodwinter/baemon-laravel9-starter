@@ -176,6 +176,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\FungsiServiceProvider::class,
 
     ],
 
@@ -192,6 +193,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // ...
+        'Fungsi' => App\Helpers\Fungsi::class,
     ])->toArray(),
 
 ];
