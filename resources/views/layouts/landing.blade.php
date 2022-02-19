@@ -64,6 +64,19 @@
                            {{Fungsi::app_nama()}}
                         </h1>
                         <p class="lead mb-4 mb-lg-5">Made with Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}).</p>
+
+        @php
+        // exec('git rev-parse --verify HEAD 2> /dev/null', $output);
+        // $hash = $output[0];
+        // dd($hash)
+        $commitHash = trim(exec('git log --pretty="%h" -n1 HEAD'));
+        $commitDate = new \DateTime(trim(exec('git log -n1 --pretty=%ci HEAD')));
+        $commitDate->setTimezone(new \DateTimeZone('UTC'));
+        // dd($commitDate);
+        // dd($commitDate->format('Y-m-d H:i:s'));
+        $versi=$commitDate->format('Ymd.H.i.s');
+    @endphp
+                        <p class="lead mb-4 mb-lg-5"> v0. {{ $versi }}.</p>
                         <div>
                             <a href="#" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mr-md-3">
                                 <span class="d-flex align-items-center">

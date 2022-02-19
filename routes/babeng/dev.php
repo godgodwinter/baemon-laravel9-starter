@@ -24,3 +24,6 @@ Route::get('dev/qrcode2', function () {
                     ->generate('A simple example of QR code');
 });
 
+Route::get('/dev/export', [testingController::class, 'export'])->name('dev.export');
+Route::get('/dev/cetak', [testingController::class, 'cetak'])->name('dev.cetak');
+
