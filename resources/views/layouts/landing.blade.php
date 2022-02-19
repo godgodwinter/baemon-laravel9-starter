@@ -63,7 +63,7 @@
                         <h1 class="display-2 font-weight-bolder mb-4">
                            {{Fungsi::app_nama()}}
                         </h1>
-                        <p class="lead mb-4 mb-lg-5">Made with Laravel 9, PHP 8+.</p>
+                        <p class="lead mb-4 mb-lg-5">Made with Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}).</p>
                         <div>
                             <a href="#" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mr-md-3">
                                 <span class="d-flex align-items-center">
