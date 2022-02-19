@@ -1,0 +1,15 @@
+@extends('layouts.default')
+
+@section('title')
+Beranda
+@endsection
+
+@push('before-script')
+
+@if (session('status'))
+{{-- <x-sweetalertsession tipe="{{session('tipe')}}" status="{{session('status')}}"/> --}}
+@endif
+@endpush
+
+@section('content')
+@endsection
