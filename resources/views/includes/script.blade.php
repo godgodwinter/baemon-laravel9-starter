@@ -1,3 +1,5 @@
+<!-- Babeng -->
+<script src="{{ asset('/') }}assets/js/babeng.js"></script>
 <!-- Core JS -->
 <!-- build:js assets/vendor/js/core.js -->
 <script src="{{ asset('/') }}assets/template/sneat/assets/vendor/libs/jquery/jquery.js"></script>
