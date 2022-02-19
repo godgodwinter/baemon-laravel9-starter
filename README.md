@@ -14,7 +14,7 @@ work On Progress
 | Auth : Email, Username, NomerInduk                                                                       | :white_check_mark:                                                                                                               |
 | Template Lading                                                                     | :clock1030:                                                                                                               |
 | Template admin                                                                       | -                                                                                                              |
-| Helper / Fungsi                                                                       | -                                                                                                              |
+| Helper / Fungsi                                                                       | :white_check_mark:                                                                                                               |
 | Seeder                                                                        | :white_check_mark:                                                                                                              |
 | Faker                                                                        | -                                                                                                          |
 | Excel : Export and Import                                                                       | -                                                                                                              |

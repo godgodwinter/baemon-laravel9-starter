@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\DB;
 
 class Fungsi {
     public static function tanggalindo($inputan){
+        //formatInputan : 2020-02-19
         $bulanindo='Januari';
         $str=explode("-",$inputan);
                 if($str[1]=='01'){

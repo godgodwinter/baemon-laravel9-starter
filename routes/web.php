@@ -1,5 +1,6 @@
 <?php
 
+use App\Helpers\Fungsi;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,8 +22,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/fungsi', function () {
-    return Fungsi::tanggalindo('2020-02-19');
-});
 
+require __DIR__.'/babeng/dev.php';
 require __DIR__.'/auth.php';
