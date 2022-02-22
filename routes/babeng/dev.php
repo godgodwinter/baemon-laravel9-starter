@@ -2,6 +2,7 @@
 
 use App\Helpers\Fungsi;
 use App\Http\Controllers\crudController;
+use App\Http\Controllers\dev\seederController;
 use App\Http\Controllers\dev\settingsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dev\testingController;
@@ -31,8 +32,6 @@ Route::get('dev/qrcode2', function () {
 Route::get('/dev/export', [testingController::class, 'export'])->name('dev.export');
 Route::get('/dev/cetak', [testingController::class, 'cetak'])->name('dev.cetak');
 
-Route::get('/dev/settings', [settingsController::class, 'index'])->name('dev.settings');
-Route::put('/dev/settings/{item}', [settingsController::class, 'update'])->name('dev.settings.update');
 
 //pages
 Route::get('/dev/crud', [crudController::class, 'index'])->name('dev.crud');
@@ -41,3 +40,11 @@ Route::post('/dev/crud/store', [crudController::class, 'store'])->name('dev.crud
 Route::get('/dev/crud/edit/{item}', [crudController::class, 'edit'])->name('dev.crud.edit');
 Route::put('/dev/crud/update/{item}', [crudController::class, 'update'])->name('dev.crud.update');
 Route::delete('/dev/crud/destroy/{item}', [crudController::class, 'destroy'])->name('dev.crud.destroy');
+
+//settings
+Route::get('/dev/settings', [settingsController::class, 'index'])->name('dev.settings');
+Route::put('/dev/settings/{item}', [settingsController::class, 'update'])->name('dev.settings.update');
+//seeder and reset
+Route::post('/dev/seeder/kategori', [seederController::class, 'kategori'])->name('dev.seeder.kategori');
+Route::post('/dev/seeder/hard', [seederController::class, 'hard'])->name('dev.seeder.hard');
+Route::post('/dev/seeder/soft', [seederController::class, 'soft'])->name('dev.seeder.soft');
