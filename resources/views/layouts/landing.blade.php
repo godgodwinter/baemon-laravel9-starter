@@ -78,19 +78,19 @@
     @endphp
                         <p class="lead mb-4 mb-lg-5"> v0. {{ $versi }}.</p>
                         <div>
-                            <a href="#" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mr-md-3">
+                            <a href="https://github.com/godgodwinter/baemon-admin-starter.git" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mr-md-3">
                                 <span class="d-flex align-items-center">
-                                    <span class="icon icon-brand mr-2 mr-md-3"><span class="fab fa-apple"></span></span>
+                                    <span class="icon icon-brand mr-2 mr-md-3"><span class="fab fa-github"></span></span>
                                     <span class="d-inline-block text-left">
-                                        <small class="font-weight-normal d-none d-md-block">Available on</small> App Store
+                                        <small class="font-weight-normal d-none d-md-block">Available on</small> Github
                                     </span>
                                 </span>
                             </a>
-                            <a href="#" class="btn btn-dark btn-download-app">
+                            <a href="https://baemon.web.id/" class="btn btn-dark btn-download-app">
                                 <span class="d-flex align-items-center">
                                     <span class="icon icon-brand mr-2 mr-md-3"><span class="fab fa-google-play"></span></span>
                                     <span class="d-inline-block text-left">
-                                        <small class="font-weight-normal d-none d-md-block">Available on</small> Google Play
+                                        <small class="font-weight-normal d-none d-md-block">Our Work</small> Baemon
                                     </span>
                                 </span>
                             </a>

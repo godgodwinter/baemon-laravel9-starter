@@ -13,7 +13,7 @@
 <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
     <li class="nav-item">
         <a href="#about" class="nav-link">
-            About2
+            About
         </a>
     </li>
     <li class="nav-item">
