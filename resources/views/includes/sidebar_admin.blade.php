@@ -4,7 +4,7 @@
         href="{{route('dev.crud')}}"
         class="menu-link"
     >
-    <i class="menu-icon tf-icons fa-solid fa-phone"></i>
+    <i class="menu-icon fa-solid fa-table-cells"></i>
         <div data-i18n="Support">Crud</div>
     </a>
     </li>

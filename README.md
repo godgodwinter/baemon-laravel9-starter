@@ -22,11 +22,12 @@ work On Progress
 | Barcode / Qrcode : milon/barcode                                                                       | :white_check_mark:                                                                                                               |
 |  Qrcode : SimpleSoftwareIO/qrcode                                                                       | :white_check_mark:                                                                                                               |
 | Hak Akses (controller)                                                                       | :clock1030:                                                                                                               |
-| Datatable                                                                       | :clock1030:                                                                                                               |
+| Datatable                                                                       | :white_check_mark:                                                                                                               |
 | wysiwyg                                                                       | :clock1030:                                                                                                               |
 | Chart / Graph                                                                       | :clock1030:                                                                                                               |
 | Sweetalert2 (session / notif)                                                                      | :white_check_mark:                                                                                                               |
 | Fontawesome6                                                                      | :white_check_mark:                                                                                                               |
+| CRUD basic                                                                      | :white_check_mark:                                                                                                               |
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
