@@ -1,4 +1,13 @@
 
+<li class="menu-item">
+    <a
+        href="{{route('dev.crud')}}"
+        class="menu-link"
+    >
+    <i class="menu-icon tf-icons fa-solid fa-phone"></i>
+        <div data-i18n="Support">Crud</div>
+    </a>
+    </li>
 <!-- Layouts -->
 <li class="menu-item">
 <a href="javascript:void(0);" class="menu-link menu-toggle">
