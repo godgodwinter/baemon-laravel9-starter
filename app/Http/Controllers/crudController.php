@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\kategori;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class crudController extends Controller
 {
@@ -27,6 +28,7 @@ class crudController extends Controller
             $request->validate([
                 'nama'=>'required|unique:kategori',
                 'prefix'=>'required',
+                'kode'=>'required',
             ],
             [
                 'nama.nama'=>'Nama harus diisi',
@@ -35,18 +37,19 @@ class crudController extends Controller
                 array(
                        'nama'     =>   $request->nama,
                        'prefix'     =>   $request->prefix,
+                       'kode'     =>   $request->kode,
                        'created_at'=>date("Y-m-d H:i:s"),
                        'updated_at'=>date("Y-m-d H:i:s")
                 ));
-    return redirect()->route('kategori')->with('status','Data berhasil tambahkan!')->with('tipe','success')->with('icon','fas fa-feather');
+    return redirect()->route('dev.crud')->with('status','Data berhasil tambahkan!')->with('tipe','success')->with('icon','fas fa-feather');
     }
 
-    public function edit(kategori $id)
+    public function edit(kategori $item)
     {
         $pages='kategori';
-        return view('pages.dev.kategori.edit',compact('pages','id'));
+        return view('pages.dev.kategori.edit',compact('pages','item'));
     }
-    public function update(kategori $id,Request $request)
+    public function update(kategori $item,Request $request)
     {
 
         $request->validate([
@@ -55,23 +58,25 @@ class crudController extends Controller
         [
             'nama.required'=>'nama harus diisi',
             'prefix'=>'required',
+            'kode'=>'required',
         ]);
 
-            kategori::where('id',$id->id)
+            kategori::where('id',$item->id)
             ->update([
                 'nama'     =>   $request->nama,
                 'prefix'     =>   $request->prefix,
+                'kode'     =>   $request->kode,
                'updated_at'=>date("Y-m-d H:i:s")
             ]);
 
 
 
-    return redirect()->route('kategori')->with('status','Data berhasil diubah!')->with('tipe','success')->with('icon','fas fa-feather');
+    return redirect()->route('dev.crud')->with('status','Data berhasil diubah!')->with('tipe','success')->with('icon','fas fa-feather');
     }
-    public function destroy(kategori $id){
+    public function destroy(kategori $item){
 
-        kategori::destroy($id->id);
-        return redirect()->route('kategori')->with('status','Data berhasil dihapus!')->with('tipe','warning')->with('icon','fas fa-feather');
+        kategori::destroy($item->id);
+        return redirect()->route('dev.crud')->with('status','Data berhasil dihapus!')->with('tipe','warning')->with('icon','fas fa-feather');
 
     }
 }

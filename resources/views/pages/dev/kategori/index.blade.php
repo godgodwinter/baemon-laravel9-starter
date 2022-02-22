@@ -28,9 +28,9 @@ Kategori
               aria-label="Toolbar with button groups"
             >
             <div class="btn-group" role="group" aria-label="Third group">
-              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tambah">
+              <a href="{{route('dev.crud.create')}}" type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tambah">
                   <i class="fa-solid fa-circle-plus"></i>
-              </button>
+              </a>
             </div>
               <div class="btn-group" role="group" aria-label="First group">
                 <button type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Download PDF">
@@ -69,8 +69,8 @@ Kategori
                 <td class=" text-center">{{$loop->index+1}}</td>
                 <td class="babeng-min-row">
                     <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Detail"><i class="fa-solid fa-angles-right"></i></button>
-                    <button class="btn btn-warning btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="fa-solid fa-pen-to-square"></i></button>
-                    <button class="btn btn-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><i class="fa-solid fa-trash-can"></i></button>
+                    <x-btnedit link="{{route('dev.crud.edit',$item->id)}}"></x-btnedit>
+                    <x-btndelete link="{{route('dev.crud.destroy',$item->id)}}"></x-btndelete>
                 </td>
                 <td>{{$item->nama}}</td>
                 <td>{{$item->prefix}}</td>

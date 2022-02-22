@@ -12,7 +12,7 @@ class testingController extends Controller
 {
     public function index(){
         $pages='dashboard';
-        return view('pages.dev.dashboard.index');
+        return view('pages.dev.dashboard.index',compact('pages'));
     }
     public function notif(){
         return redirect()->route('dev.admin.dashboard')->with('status','Data berhasil diubah!')->with('tipe','success')->with('icon','fas fa-feather');

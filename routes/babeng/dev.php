@@ -14,7 +14,7 @@ Route::get('/dev/admin/dashboard', function () {
 });
 
 
-Route::get('/dev/admin/dashboard', [testingController::class, 'index'])->name('dev.admin.dashboard');
+Route::get('/dev/admin/dashboard', [testingController::class, 'index'])->name('dashboard');
 Route::get('/dev/admin/dashboard/notif', [testingController::class, 'notif'])->name('dev.admin.dashboard.notif');
 Route::get('/dev/barcode', [testingController::class, 'barcode'])->name('dev.barcode');
 Route::get('/dev/qrcode', function () {
@@ -31,3 +31,8 @@ Route::get('/dev/cetak', [testingController::class, 'cetak'])->name('dev.cetak')
 
 //pages
 Route::get('/dev/crud', [crudController::class, 'index'])->name('dev.crud');
+Route::get('/dev/crud/create', [crudController::class, 'create'])->name('dev.crud.create');
+Route::post('/dev/crud/store', [crudController::class, 'store'])->name('dev.crud.store');
+Route::get('/dev/crud/edit/{item}', [crudController::class, 'edit'])->name('dev.crud.edit');
+Route::put('/dev/crud/update/{item}', [crudController::class, 'update'])->name('dev.crud.update');
+Route::delete('/dev/crud/destroy/{item}', [crudController::class, 'destroy'])->name('dev.crud.destroy');

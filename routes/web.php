@@ -19,9 +19,9 @@ Route::get('/', function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('pages.dev.dashboard.index');
-    })->name('dashboard');
+    // Route::get('/dashboard', function () {
+    //     return view('pages.dev.dashboard.index');
+    // })->name('dashboard');
 });
 
 require __DIR__.'/babeng/dev.php';

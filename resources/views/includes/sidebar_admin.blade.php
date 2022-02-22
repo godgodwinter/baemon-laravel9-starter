@@ -1,5 +1,5 @@
 
-<li class="menu-item">
+<li class="menu-item {{$pages=='kategori'?'active': ''}}">
     <a
         href="{{route('dev.crud')}}"
         class="menu-link"
