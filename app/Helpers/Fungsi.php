@@ -48,4 +48,14 @@ class Fungsi {
         }
         return $data;
     }
+    // getter and setter
+    public static function app_namapendek(){
+        $settings = DB::table('settings')->first();
+        if($settings!=null){
+            $data=$settings->app_namapendek;
+        }else{
+            $data="Judul Aplikasi";
+        }
+        return $data;
+    }
 }

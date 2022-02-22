@@ -1,4 +1,12 @@
-
+<li class="menu-item {{$pages=='settings'?'active': ''}}">
+    <a
+        href="{{route('dev.settings')}}"
+        class="menu-link"
+    >
+    <i class="menu-icon fas fa-cog"></i>
+        <div data-i18n="Support">Pengaturan</div>
+    </a>
+    </li>
 <li class="menu-item {{$pages=='kategori'?'active': ''}}">
     <a
         href="{{route('dev.crud')}}"

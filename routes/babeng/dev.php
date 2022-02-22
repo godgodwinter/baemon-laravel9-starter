@@ -2,6 +2,7 @@
 
 use App\Helpers\Fungsi;
 use App\Http\Controllers\crudController;
+use App\Http\Controllers\dev\settingsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dev\testingController;
 
@@ -29,6 +30,9 @@ Route::get('dev/qrcode2', function () {
 
 Route::get('/dev/export', [testingController::class, 'export'])->name('dev.export');
 Route::get('/dev/cetak', [testingController::class, 'cetak'])->name('dev.cetak');
+
+Route::get('/dev/settings', [settingsController::class, 'index'])->name('dev.settings');
+Route::put('/dev/settings/{item}', [settingsController::class, 'update'])->name('dev.settings.update');
 
 //pages
 Route::get('/dev/crud', [crudController::class, 'index'])->name('dev.crud');

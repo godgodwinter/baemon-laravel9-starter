@@ -35,11 +35,11 @@ class oneseeder extends Seeder
          //settings SEEDER
         DB::table('settings')->insert([
             'app_nama' => 'Nama App',
-            'app_namapendek' => 'St',
+            'app_namapendek' => 'Bae',
             'paginationjml' => '10',
-            'lembaga_nama' => 'LEMBAGA PSIKOLOGI PELITA WACANA',
-            'lembaga_jalan' => 'Jl.Simpang Wilis 2 Kav. B',
-            'lembaga_telp' => '0341-581777',
+            'lembaga_nama' => 'PT Baemon Indonesia',
+            'lembaga_jalan' => 'Jl.Raya Ramai Sekali No 2 Kav. B',
+            'lembaga_telp' => '0341-123456',
             'lembaga_kota' => 'Malang',
             'lembaga_logo' => 'assets/upload/logo.png',
             'created_at' => Carbon::now(),
